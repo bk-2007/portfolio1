@@ -103,7 +103,7 @@ export const projects = [
     stack: ["Next.js", "React", "Data Visualization"],
     description:
       "Analytics dashboard diagnosing stock-outs, cancellations and churn across 620 partner stores. Includes KPI trends, survey signals, cause-and-effect churn analysis, a scenario simulator and a customer shopping flow. Multi-module architecture (Overview, Inventory, Stores, Operations, Customers, Retention, Promotions, Impact).",
-    url: "[NOVA_CART_URL]", // REPLACE with live Nova Cart URL
+    url: "https://nova-cart1.vercel.app/",
     accent: "coral",
   },
   {
@@ -112,7 +112,7 @@ export const projects = [
     subtitle: "Real-Time Chat Application",
     stack: ["Next.js", "Firebase", "Socket.io"],
     description: "Real-time chat web application.",
-    url: "[CHATWAVE_URL]", // REPLACE with live ChatWave URL
+    url: "https://chatwave2-pink.vercel.app/",
     accent: "cobalt",
   },
   {
@@ -121,7 +121,7 @@ export const projects = [
     subtitle: "Event Web Application",
     stack: ["React", "Web Development"],
     description: "Responsive event web application.",
-    url: "[EVENTRAA_URL]", // REPLACE with live Eventraa URL
+    url: "https://eventraa.vercel.app/",
     accent: "sunny",
   },
   {
@@ -131,7 +131,7 @@ export const projects = [
     stack: ["Next.js", "React", "Tailwind CSS"],
     description:
       "Connects students, alumni and recruiters with job search, application tracking, referrals and mentorship messaging. 10+ responsive pages: dashboard, alumni directory, events, company profiles.",
-    url: "[ALUMCONNECT_URL]", // REPLACE with live AlumConnect URL
+    url: "https://alumconnect-theta.vercel.app/",
     accent: "teal",
   },
 ];
