@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-cream: #FFF8EC;
+  --text-ink: #141414;
+  --color-coral: #FF5A5F;
+  --color-sunny: #FFC93C;
+  --color-teal: #00A896;
+  --color-cobalt: #2D5BFF;
+  --border-width: 2px;
+  --border-radius: 12px;
+  --shadow-neo: 4px 4px 0 #141414;
+  --shadow-neo-hover: 8px 8px 0 #141414;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-cream);
+  color: var(--text-ink);
+  font-family: var(--font-body), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF8EC;
+  color: #141414;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom focus ring for WCAG AA compliance */
+*:focus-visible {
+  outline: 3px solid #141414;
+  outline-offset: 3px;
+}
+
+/* Subtle fade-up transition */
+.fade-up {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .fade-up {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Neo-brutalist tactile button & card utilities */
+.neo-box {
+  background-color: #FFFFFF;
+  border: 2px solid #141414;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #141414;
+}
+
+.neo-interactive {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.neo-interactive:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 #141414;
+}
+
+.neo-interactive:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #141414;
+}
